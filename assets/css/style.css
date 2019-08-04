@@ -216,14 +216,37 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media screen and (min-width: 400px) {
-  body {
-    background-color: lightgreen;
+
+
+  /* large screens */
+
+  @media screen and (max-width:980px)
+  {
+
+  }
+  /* medium screens */
+
+  @media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+  .work {
+    width: 90%;
+    height: auto;
   }
 }
 
-@media screen and (min-width: 980px) {
-  body {
-    background-color: lavender;
+  /* small screens */
+@media screen and (max-width: 640px) {
+  .container {
+    width: 90%;
+    height: auto;
+    }
+  .p {
+    height: auto;
+  }
+  #masthead{
+    position: static;
   }
 }
